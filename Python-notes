@@ -1,0 +1,931 @@
+#       ***************PYTHON****************
+
+# Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+# It is used for:
+'''
+1]web development (server-side),
+2]software development,
+3]mathematics,
+4]system scripting.
+'''
+#What can Python do?
+'''
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+'''
+#Variables : Variables are containers for storing data values.
+'''
+x=5 
+y=3
+z=x+y
+print(z) 
+'''
+# Multi Variables:
+'''
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+'''
+#FN + F5 --run the program shortcut
+
+# Data Type :   python all data type store unlimited words 
+
+# Data type        Examples
+'''
+ 1) int          ---2,3,4,5
+ 2) float        ---2.3,3.4,5.2
+ 3) str          ---"h","vaibhav"      ---allways use  ""
+ 4) complex      ---12+6j
+ 5) list         ---[10,3.4,25+5j,"A"] ---all data type store in list  --use []
+ 6) tuple        ---"A","B",12,        ---all data type store in tuple --do not use []
+ 7) set          ---{1,2,3,4,4,3,2,}   ---repite elements do not show  --use {}
+ '''
+# check the data type
+'''
+x=5 
+y=3
+z=x+y
+print(type(z))
+
+'''
+# Comments :
+'''
+* multi line comment use  """  """ , '''  '''
+* sigle line comment use # 
+'''
+
+# How to change data type
+'''
+x="123"
+print(type(x))  ----str
+y=int(x)
+print(type(y))  ----int
+z=float(y)
+print(type(z))  ----float
+
+'''
+# librabry
+
+# 1)keyword : this librabry use list the funtion
+'''
+import keyword    
+len(keyword.kwlist)   ------show length of word
+print(len(keyword.kwlist))
+'''
+# 2)math :  this librabry use maths problems  math.[options]
+'''
+import math
+x=math.lcm(2,5)
+print(x)
+
+y=math.floor(2/5)
+print(y)
+'''
+# 3)turtle   ----this librabry useing by games
+'''
+import turtle
+z=turtle.Screen()
+z.setup(200,200)
+z.bgcolor("red")
+'''
+# Input funtion   ---by Defulte str type of data
+
+'''
+print("enter first name")
+x=input()
+print("enter last name")
+y=input()
+
+print(y,z,  sep='  ')  # ----sep=> space
+
+''''''
+x=input("enter first name:")
+y=input("enter second name:")
+print(x,y)
+'''
+# Line Change Funtion
+'''
+print("vaibhav")
+print()
+print()
+print()     # -----4 line space 
+print()
+print("upare")
+'''
+# \n => change the line
+# print("Hello\nWorld!")
+
+'''
+print("Hello")
+print(end='\n\n\n\n\n\n')
+print("World")
+
+'''
+# Space of two line:
+'''
+input("enter your name:")
+print(end='            ')
+input("enter your age:")
+'''
+# \t : Space of two words
+
+# print("Hello\t\tWorld!")
+
+# Change data type:
+'''
+x=input("first number:")
+print(type(x))                #-------str
+y=input("second number:")
+print(type(y))                #-------str
+z=int(x)+int(y)
+print(type(z))                #-------int
+print("Addition is ",z)
+'''
+# Short
+'''
+x=int(input("first number:"))
+y=int(input("second number:"))
+print("Addition is ",x+y)
+'''
+
+# Circle formula pay by 4 --- convert --->3.14*x*x
+'''
+x=float(input("Enter a redious:"))
+print("Area of circle", 3.14*x*x)
+'''
+
+# NUMBER SYSTEM
+
+# Decimal       0-9
+
+# Binary        0-1     denoted bin    repesente 0b
+
+'''
+convert decimal to binary
+>> x=435
+>> bin(x)
+>> '0b110110011'
+
+convert binary to decimal
+>> z=0b110110011
+>> z
+>> 435
+
+'''
+# Octal         0-7    denoted oct    repesente 0o
+'''
+convert decimal to octal
+>>x=435
+>>oct(x)
+>>'0o663'
+
+convert octal to decimal
+>>y=0o663
+>>y
+>>435
+
+convert octal to binary
+>>y=0o663
+>> bin(y)
+>> '0b110110011'
+
+'''
+#Hexadecimal   0-9 A B C D E F    denoted hex    repesente 0x
+
+'''
+convert decimal to hexadecimal
+>>x=435
+>>hex(x)
+>>'0x1b3'
+
+convert hexadecimal to decimal
+>>x=0x1b3
+>>x
+>>435
+
+'''
+# Max
+'''
+x=[12,55,88,66,45,894,155]
+max(x)
+894
+'''
+# Min
+'''
+x=[12,55,88,66,45,894,155]
+min(x)
+12
+'''
+# Len
+'''
+x=[12,55,88,66,45,894,155]
+len(x)
+7
+'''
+# Memory Optimization :
+'''
+x=5
+[]------->[id]
+x-------->5
+--->id<----provide the id 5
+
+x(5)
+id(x)
+2185405977216
+
+y=10
+id(y)
+140713063467736 ------->diff
+
+#but
+
+z=5
+id(z)
+2185405977216    ----------x and z same
+'''
+# how to check equal or not [ is, == ]
+'''
+x==z   -----true
+
+x is z  ----true
+
+x==y    ----false
+
+x is y  ----false
+'''
+
+# Interviwe Quetion
+'''
+list
+set
+tuple
+disnary
+'''
+
+#conditional statements:
+
+# there are three forms of the if...else statement.
+
+# if statement
+# if...else statement
+# if...elif...else statement
+
+#---------------------------------
+# if ----yadi
+# >  ---greater
+# <  ---less
+
+# if statement
+'''
+x=5
+if x>0:
+    print ("postive")
+    print ("x is greater")
+--------------------------
+'''
+# if...else statement
+'''
+x=-10
+if x>0:
+    print("postive")
+else:
+    print("negative")   <<===
+--------------------------
+''''''
+x=int(input("enter number:"))
+if x>0:
+      print(x,"is postive")
+elif x<0:
+    print(x,"is smaller")
+elif x==0:
+    print(x,"is equal")
+---------------------------
+'''
+# if...elif...else statement
+
+# else : allways use last line of  code
+'''
+x=int(input("enter number:"))
+if x>0:
+      print(x,"is postive")
+elif x<0:
+    print(x,"is smaller")
+else:
+    print(x,"is equal")
+---------------------------
+''''''
+x=int(input("Enter first number:"))
+y=int(input("Enter second number:"))
+if x>y:
+    print(x,"is greater")
+elif x<y:
+    print(y,"is greater")
+else:
+    print("both are equal")
+-----------------------------
+'''
+# Interative statements :
+
+# For Loop : a for loop is used to iterate over sequences such as lists, tuples, string, etc.
+'''
+x="vaibhav"
+for v in x:
+    print("hello")
+    print("bye")
+-----------------------------
+'''
+# range function
+'''
+range(n)-----------------range(5)  -------0,1,2,3,4 =>5
+range(start,stop) -------range(5,7)  -----5,6,7     =>3
+range(start,stop,step)---range(5,15,3) ---5,8,11,14 =>4
+
+x="vaibhav"
+for m in range(5):
+    print(x)
+-----------------------------
+'''
+# while loop : while loop we can execute a set of statements as long as a condition is true.
+'''
+x=5
+while x<15:
+    print(x)
+    x=x+1
+
+y=15
+while y>10:
+    print(y)
+    y= y-1
+
+'''
+# And function
+'''
+x=float(input("enter first number x="))
+y=float(input("enter second number y="))
+z=float(input("enter third number z="))
+
+if x>y and x>z:
+    print(x,"x is greater than y,z")
+elif y>x and y>z:
+    print(y,"y is greater than x,z")
+elif z>x and z>y:
+    print(z,"z is greater than x,y")
+else:
+    print(x,y,z,"are equal")
+'''
+#step-1
+'''
+k1=[11,22,33,44,55,66,77,88]
+L=len(k1)
+x=0
+while x<L:
+    print(x)
+    x=x+1
+'''
+
+#step-2
+'''
+k1=[11,22,33,44,55,66,77,88]
+x=0
+while x<len(k1):
+    print(x)
+    x=x+1
+'''
+#step-3
+'''
+k1=[11,22,33,44,55,66,77,88]
+x=0
+while x<len(k1):
+    print(k1[x])
+    x=x+1    
+'''
+# Swapping
+'''
+x=int(input("enter x value:"))
+y=int(input("enter y value:"))
+z=int(input("enter z value:"))
+
+print("x=",x,"y=",y,"z=",z)
+
+print("After Swapping")
+x=y
+y=z
+z=x
+print("x=",x,"y=",y,"z=",z)
+'''
+# Remender
+'''
+5*2 => 2.5
+
+4%2 => 0  ---2*2 =4
+5%2 => 1  ---2*2 = 4-5 => 1
+7%3 => 1  ---2*3 = 6-7 => 1
+'''
+# list
+'''
+a=[11,22,33,44,55]
+# [11][22][33][44][55]
+# [0] [1] [2] [3] [4]  ---indexing
+
+print(a[2])
+print(a[4])
+'''
+# list option
+
+#x=[11,22,33,44,55]
+
+# OPTION
+'''
+x.append(88)           ---insert
+x.clear()
+del x                  ---delete
+x.sort()
+x.reverse()            ---retune
+x.remove(33)           ---value
+x.pop(2)               ---index
+x.insert(2,77)         ---index, value
+y=x                    ---copy
+x.extend([99,66])
+print(x.count(11))     ---count the number
+x.insert(1,56)        ----index,value
+'''
+#for i in x:
+#    print(x)
+
+#slicing operator
+
+# [start:stop:step]
+'''
+h1=[1,2,5,12,86,46,35,14]
+g1=h1[2:4:1]
+print(g1)
+
+g2=h1[2::2]
+print(g2)
+
+print(h1[4:5:1])
+print(h1[-1::-1])
+print(h1[-1::1])
+'''
+#task
+#list useing while loop
+
+# Tuple :
+# date can not be change
+# only two option in tuple :1) count  2) index 
+
+# how to create empty dist
+'''
+t1={}
+print(type(t1))
+'''
+
+#how to change tuple data
+'''
+t1=(12,55,86,94,67)
+print(type(t1))
+
+convert tuple to list data
+then use list option and change the data
+
+t2=list(t1)
+t2.insert(0,55)
+print(t2)
+'''
+
+# SET :
+
+#set start with {}
+#duplicate data do not store in set
+#set data do not indexing data [0][1][2][3][4]
+#slicing operator do not support
+#order does not mentaince
+'''
+>>s1={11,22,33,44,55,22,44}
+>>s1
+>>{33, 22, 55, 11, 44}
+'''
+#how to create empty set
+'''
+k1=set()
+print(type(k1))
+'''
+
+#Option
+'''
+1] add
+2] clear
+3] copy
+4] difference
+5] difference_update
+6] intersection
+7] intersection_update
+8] discard
+9] isdisjoint
+10] issubset
+11] issuperset
+12] pop
+13] remove
+14] symmetric_difference
+15] symmetric_difference_update
+16] union
+17] update
+'''
+
+# update :
+'''
+s1={1,2,3,4,5}
+s2={4,5,6,7}
+s1.update(s2)
+s1
+{1, 2, 3, 4, 5, 6, 7}
+'''
+# union:
+
+# only show result , do not store s1 and s2 data
+'''
+s1={1,2,3,4,5}
+s2={4,5,6,7}
+s1.union(s2)
+{1, 2, 3, 4, 5, 6, 7}
+'''
+# how to store the data s1 and s2 useing union
+'''
+s1={1,2,3,4,5}
+s2={4,5,6,7}
+s3=s1.union(s2)
+s3
+{1, 2, 3, 4, 5, 6, 7}
+'''
+# Intersection : show comman word
+'''
+s1={1, 2, 3, 4, 5}
+s2={4, 5, 6, 7}
+s1.intersection(s2)
+{4, 5}
+'''
+# Intersection_update : only store comman word
+'''
+>>s1={1, 2, 3, 4, 5}
+>>s2={4, 5, 6, 7}
+>>s1.intersection_update(s2)
+>>s1
+>>{4, 5}
+'''
+# Discard : remove word , word is missing discard do not show error
+'''
+s1={1, 2, 3, 4, 5}
+s2={4, 5, 6, 7}
+s1.discard(1)
+s1
+{2, 3, 4, 5}
+'''
+# Remove : remove word ,  word is missing Remove show error
+'''
+s1={1,2,3,4,5}
+s2={4, 5, 6, 7}
+s1.remove(1)
+s1
+{2, 3, 4, 5}
+'''
+# Issubset :
+'''
+d1={1,2,3,4,5}
+d2={2,3,4}
+d1.issubset(d2)
+False
+d2.issubset(d1)
+True
+'''
+
+# Array
+
+# type:
+
+#1) Numeric -------[0][1][2][3]
+#2) Associative ---[100][vir][5][0][55]
+
+
+
+# small project :
+'''
+p=123
+c=0
+while c!=3:
+  c=c+1
+  pin=int(input("Enter a pin"))
+  if pin==p:
+     print("Transaction Successful")
+     break
+  else:
+      print("Incorrect Pin")
+else:
+    print("Card Blocked")
+'''
+# Dictionaries : key=value
+'''
+Normal way
+
+d1={"Name":"vaibhav","Number":123,"year":2000}
+print(type(d1))
+'''
+# OR
+'''
+d1=dict(Name="vaibhav",Number=123,year=2000)
+print(type(d1))
+'''
+# EXAMPLES
+'''d={"name":"vaibhav","Roll":123,"passwd":123,"age":22}
+for i in d:
+    print(i,":",d[i])'''
+
+# EXAMPLE
+'''
+d1={"name": "vaibhav","age":22,"year":2000,"No":123}
+key=list(d1) #converts keys into a list
+i=0
+while i<len(key):
+    #then we print keys using key[] and separate by ":" then print values of each key using "books[key[]]".
+    print(key[i],":",d1[key[i]]) 
+    i=i+1    
+'''
+#=====================================================================================
+
+# FUNCTION  : Python Functions is a block of statements that return the specific task.
+
+#Some Benefits of Using Functions
+'''
+Increase Code Readability 
+Increase Code Reusability
+''''''
+def fun():
+    z=x+y
+    print("addition of x+y:",z)
+x=int(input("value of x:"))
+y=int(input("value of y:"))
+
+fun()
+'''
+# Parameters passing Function :
+# Arguments passing Function :
+'''
+def fun(p,q):   # Formal parameters  function definition  
+    z=p+q
+    print("addition of x+y:",z)
+x=int(input("value of x:"))
+y=int(input("value of y:"))
+
+fun(x,y)      # Actual parameters    function calling
+'''
+# = ke side ka part pahile extuacate hota hai
+
+# return function :
+'''
+def fun(p,q):
+    z=p+q
+    return z
+x=int(input("value of x:"))
+y=int(input("value of y:"))
+
+result=fun(x,y)
+print("Addition is:",result)
+'''
+#Define function
+
+# 1] Take Nothing Retune Nothing
+# 2] Take Something Retune Nothing
+# 3] Take Nothing Retune Something
+# 4] Take Something Retune Something
+
+
+# Types of Python Function Arguments :
+'''
+Python supports various types of arguments that can be passed
+at the time of the function call.
+'''
+# following 4 types of function arguments.
+ 
+# 1] Default argument
+'''
+def fun1(x,y):
+    z=x+y
+    print(z)
+fun1(10,20)
+'''
+# OR
+'''
+def fun1(x,y,z=0):
+    z=x+y+z
+    print(z)
+fun1(10,20)
+fun1(10,20,30)
+'''
+
+# 2] Keyword arguments (named arguments)
+'''
+def fun1(x,y,z=0):
+    t=x+y+z
+    print(x,y,z) 
+    print(t)
+fun1(y=10,z=20,x=30)
+'''
+# 3] Positional arguments
+'''
+def nameAge(name, age):
+    print("Hi, I am", name)
+    print("My age is ", age)
+
+print("Case-1:")
+nameAge("Suraj", 27)
+
+print("\nCase-2:")
+nameAge(27, "Suraj")
+'''
+# 4] Arbitrary arguments (variable-length arguments *args and **kwargs)
+'''
+def fun1(*g):
+    print(g)  # data is truple form
+    t=list(g)
+    print(t)
+
+fun1(10)
+fun1(10,20,30,40)
+fun1(10,20,30,40,50,60,70,80,90,100,110,120)
+'''
+# OR
+
+'''
+def myFun(*a):
+    for i in a:
+        print(i)
+ 
+ 
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
+'''
+#==================================================
+# Star Pattern
+
+#print("*")
+'''
+print("*",end="")
+print("*",end="")
+print("*",end="")
+print("*",end="")
+print("*",end="",)
+'''
+# or
+'''
+n=5
+print("*"*n)
+'''
+# print 5 star useing for loop
+'''
+for i in range(5):
+    print("*",end="")
+'''
+'''
+for i in range(5):
+    print("A",end="")
+    for j in range(3):
+        print("B",end="")
+    print("\n")
+'''
+# Simple pyramid pattern
+'''
+print("first pattern : j<=i")
+for i in range(1,7):
+     for j in range(1,7):
+         if j<=i:
+             print("*",end="  ")
+         else:
+             print(" ",end="  ")
+     print()        
+    
+print("second pattern :j>=i")
+for i in range(1,7):
+     for j in range(1,7):
+         if j>=i:
+             print("*",end="  ")
+         else:
+             print(" ",end="  ")
+     print()    
+
+print("third patternj : j>=5-i and j<=3+i")
+for i in range(1,5):
+     for j in range(1,8):
+         if j>=5-i and j<=3+i:
+             print("*",end="  ")
+         else:
+             print(" ",end="  ")
+     print()    
+'''
+'''
+print("square")
+
+n=5
+print("*"*n)
+
+for i in range(n):
+    print("*",end="")
+''''''
+n=5
+for i in range(n):
+    for j in range(n):
+        print("*",end="  ")
+    print()
+
+print("increasing tringle pattern")
+
+for i in range(n):
+    for j in range(i+1):
+        print("*",end="  ")
+    print()
+
+print("decreasing tringle pattern")    
+
+for i in range(n):
+    for j in range(i,n):
+        print("*",end="  ")
+    print()
+
+print("right tringle pattern")
+
+for i in range(n):
+
+    for j in range(i,n):
+        print(" ",end="  ")
+
+    for j in range(i+1):
+        print("*",end="  ")
+        
+    print()
+    
+print()
+
+for i in range(n):
+
+    for j in range(i+n):
+        print(" ",end="  ")
+
+    for j in range(i,n):
+        print("*",end="  ")
+        
+    print()
+    
+print("Hill Pattern")
+
+for i in range(n):
+
+    for j in range(i,n):
+        print(" ",end="  ")
+
+    for j in range(i):
+        print("*",end="  ")
+
+    for j in range(i+1):
+        print("*",end="  ")   
+    print()
+    
+print("Reverse Hill Pattern")
+
+for i in range(n):
+    for j in range(i+1):
+        print(" ",end="  ")
+
+    for j in range(i,n-1):
+        print("*",end="  ")
+
+    for j in range(i,n):
+        print("*",end="  ")
+    print()
+        
+print("Diamond pattern")
+
+for i in range(n-1):
+
+    for j in range(i,n):
+        print(" ",end="  ")
+
+    for j in range(i):
+        print("*",end="  ")
+
+    for j in range(i+1):
+        print("*",end="  ")   
+    print()
+
+
+for i in range(n):
+    for j in range(i+1):
+        print(" ",end="  ")
+
+    for j in range(i,n-1):
+        print("*",end="  ")
+
+    for j in range(i,n):
+        print("*",end="  ")
+    print()
+'''
+
